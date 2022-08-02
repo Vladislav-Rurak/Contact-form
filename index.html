@@ -20,5 +20,110 @@
     ></script>
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <form action="#">
+      <fieldset>
+        <h1
+          >Contact form</h1
+        >
+        <br />
+        <h2></h2>
+          Please fill in your
+          information and we'll be
+          sending your order.
+        </h2>
+        <br />
+        <label id="name">
+          <span>Your name:</span>
+          <input
+            type="text"
+            id="first-name"
+            name="first name"
+            placeholder="first name"
+            autofocus
+            pattern=".{4,36}"
+            required
+          />
+          <input
+            id="last-name"
+            type="text"
+            name="last name"
+            placeholder="last name"
+            pattern=".{4,36}"
+            required
+          />
+        </label>
+        <br />
+        <label
+          ><span>Your email:</span
+          ><input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="your_email@gmail.com"
+            pattern=".{4,36}@gmail.com"
+            required
+          />
+        </label>
+        <br />
+        <label>
+          <span>Phone *</span
+          ><input
+            type="tel"
+            id="tel"
+            placeholder="000"
+            pattern="[0-9]{3,3}"
+            title="use only 0-9"
+            required
+          />
+          <input
+            type="tel"
+            id="tel"
+            placeholder="000"
+            pattern="[0-9]{3,3}"
+            title="use only 0-9"
+            required
+          />
+          <input
+            type="tel"
+            id="tel"
+            placeholder="0000"
+            pattern="[0-9]{4,4}"
+            title="use only 0-9"
+            required
+          />
+        </label>
+        <br />
+        <label>
+          <span>Message subject *</span>
+          <select name="select">
+            <option
+              value="value1"
+              selected
+            >
+              Other
+            </option>
+            <option value="value2">
+              Значение 2
+            </option>
+            <option value="value3">
+              Значение 3
+            </option>
+          </select></label
+        >
+        <br /><label
+          ><span>Message *</span>
+          <textarea name="textarea"
+          rows="10" cols="50">Write something here</textarea></label>
+        <br />
+      </fieldset>
+      <button
+        type="submit"
+        id="submit-btn"
+        required
+      >
+        SUBMIT FORM
+      </button>
+    </form>
+  </body>
 </html>
